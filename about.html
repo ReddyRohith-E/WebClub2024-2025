@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MITS WebClub</title>
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    main {
+      background: #1F1F3B;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .heading {
+      margin-top: 60px;
+    }
+
+    .heading h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #F0A028;
+      margin-bottom: 10px;
+    }
+    .coord{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10rem;
+
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0 60px 0;
+    }
+
+    .profile-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      min-width: 230px;
+      text-align: center;
+      padding: 20px 0 10px 0;
+    }
+
+    .profile-card img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 5px;
+      border: 2px solid #003366;
+    }
+
+    .profile-card h2 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .profile-card p {
+      font-size: 14px;
+      color: #000;
+      margin: 5px 0 15px;
+    }
+
+    .profile-card .links {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .profile-card .links a {
+      text-decoration: none;
+      color: #003366;
+      background-color: #F0A028;
+      border-radius: 50%;
+      padding: 10px;
+      font-size: 20px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s;
+    }
+
+    .profile-card .links a:hover {
+      background-color: #F0A028;
+      opacity: 0.9;
+    }
+    .aboutsec{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 85px;
+        margin: 10%;
+    }
+    .abouts h2{
+        font-family: Roboto Serif;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color:#F0A028;
+
+    }
+    .abouts p{
+        font-family: Roboto Serif;
+        text-align: justify;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color:#fff;
+
+        
+    }
+    .vismis{
+        margin: 7%;
+        display: flex;
+        flex-direction: column;
+        background-color: #5D5D71;
+        justify-content: space-evenly;
+        padding: 1%;
+        min-height: 65vh;
+    }
+    .vismis h2{
+        font-family: Roboto Serif;
+        color:#F0A028;
+    }
+    .vismis p{
+        margin: 0 5%;
+        font-family: Roboto Serif;
+        color:#fff;
+        text-align: justify;
+    }
+    /* Mobile Menu */
+
+		@media (max-width: 768px) {
+			nav {
+        	position: absolute;
+        	top: 0;
+        	right: 0;
+        	width: 100%;
+        	height: auto;
+        	z-index: 10 !important;
+        	padding: 2rem;
+        	transition: all 0.3s ease-in-out;
+        	transform: translateY(-100%);
+        	background: linear-gradient(#003366, #0033669f);
+        	box-shadow: 0 0 10px 10px #0033669f;
+    	}
+
+      .ashv-hamburger {
+        display: none;
+        cursor: pointer;
+        z-index: 10;
+      }
+
+      nav.active {
+        display: block;
+        transform: translateY(0);
+      }
+
+			.ashv-hamburger {
+				display: block;
+				top: 1rem;
+				right: 1rem;
+				font-size: 2rem;
+				color: #F0A028;
+			}
+
+			nav ul {
+				flex-direction: column;
+				width: 100%;
+				padding: 0;
+			}
+
+      nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .event-hover ul {
+        display: none;
+      }
+
+      .event-hover:hover ul {
+        display: block;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .profile-card {
+        min-width: 180px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="aboutsec">
+        <div class="abouts">
+            <div class="about-collage">
+                <h2>About Collage</h2>
+                <p>Madanapalle Institute of Technology & Science is established in 1998 in the picturesque and pleasant environs of Madanapalle and is ideally located on a sprawling 26.17 acre campus on Madanapalle - Anantapur Highway (NH-205) near Angallu, about 10km away from Madanapalle. <br>
+
+                    MITS, originated under the auspices of Ratakonda Ranga Reddy Educational Academy under the proactive leadership of Late Sri. N. Krishna Kumar M.S. (U.S.A), the then President and Dr. N. Vijaya Bhaskar Choudary, Ph.D., Secretary & Correspondent of the Academy. <br>
+                    
+                    MITS is governed by a progressive management that never rests on laurels and has been striving conscientiously to develop it as one of the best centers of Academic Excellence in India. The Institution's profile is firmly based on strategies and action plans that match changing demands of the nation and the students fraternity. MITS enjoys constant support and patronage of NRI's with distinguished academic traditions and vast experience in Engineering & Technology.</p>
+            </div>
+            <div class="about-club">
+                <h2>About WebClub</h2>
+                <p>"Empowering Innovation, Connecting Creators”. Our MITS Web Club envisions a dynamic and inclusive community where students passionate about web development and technology come together to foster innovation, share knowledge, and create meaningful connections. Our web club provides a vibrant platform for students to explore, learn, and excel in web development. Through collaborative initiatives, skill-building activities, and a supportive community, we aim to empower our members to become proficient, innovative, and socially conscious web developers.</p>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="images/webclub.jpg" alt="">
+        </div>
+    </div>
+    <div class="vismis">
+        <div class="vision">
+            <h2>Our Vision</h2>
+            <p>To be a leading platform that nurtures aspiring web developers by fostering a culture of continuous learning, innovation, and collaboration. The MITS Web Club envisions empowering students with cutting-edge web technologies and industry-relevant skills, preparing them to contribute to the evolving digital landscape and create impactful web solutions.</p>
+        </div>
+        <hr style="width: 80%;">
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide a dynamic and engaging environment where students can explore, learn, and apply web development skills through workshops, projects, and mentorship. We aim to cultivate a strong community of passionate developers who collaborate on innovative ideas, stay updated with emerging trends, and contribute to real-world solutions that benefit both academia and industry.</p>
+        </div>
+    </div>
+    <div class="coord">
+        <div>
+    <div class="heading">
+        <h1>Coordinator</h1>
+      </div>
+      <div class="row">
+        <div class="profile-card">
+            <img src="images/nidhya.jpeg" alt="Dr. R. Nidhya">
+            <h2>Dr. R. Nidhya</h2>
+            <p>Professor - CSE<br>MITS</p>
+            <div class="links">
+              <a href="https://www.linkedin.com/in/dr-nidhya-rangarajan-0900b8b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://mits.ac.in/facultyprofile/83" target="_blank" class="portfolio"><i class="fas fa-link"></i></a>
+            </div>
+          </div></div></div>
+          <div>
+    <div class="heading">
+        <h1>Student Coordinators</h1>
+      </div>
+      <div class="row">
+    <div class="profile-card">
+        <img src="images/HarshaRao.jpeg" alt="HarshaVardhanRao">
+        <h2>V. Harshavardhan</h2>
+        <p>III CSE - 22691A0571</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/harshavardhan1974?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/HarshaVardhanRao" target="_blank" class="github"><i class="fab fa-github"></i></a>
+          <a href="https://harsharao.netlify.app" target="_blank" class="portfolio"><i class="fas fa-link"></i></a>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="images/bava.png" alt="Profile Picture">
+        <h2>V. Mahesh Kumar</h2>
+        <p>III CSE - 22691A05B5</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/mahesh-kumar-vaileti-b76295152?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/MaheshKumar1533" target="_blank" class="github"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank" class="portfolio"><i class="fas fa-link"></i></a>
+        </div></div>
+      </div></div></div>
+    <div class="heading">
+      <h1>Mentors</h1>
+    </div>
+    <div class="row">
+      
+      <div class="profile-card">
+        <img src="images/Timmampalli.jpg" alt="Profile Picture">
+        <h2>T. Meghana</h2>
+        <p>III CSE - 22691A05C3</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/meghana-timmampalli-21abb8272?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMTRk4FfXQ9%2BJO%2Fi8tvYJKA%3D%3D"
+            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Meghana3015" target="_blank" class="github"><i class="fab fa-github"></i></a>
+          <a href="https://www.behance.net/meghanatimmamp" target="_blank" class="portfolio"><i
+              class="fas fa-link"></i></a>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="images/Rohith.jpg" alt="Profile Picture">
+        <h2>E. Reddy Rohith</h2>
+        <p>III CSE - 22691A05I1</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/reddy-rohith-enduluri-656000273/" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/ReddyRohith-E" target="_blank" class="github"><i class="fab fa-github"></i></a>
+          <a href="https://rohith-pavilion.netlify.app" target="_blank" class="portfolio"><i
+              class="fas fa-link"></i></a>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="images/Karthik.jpeg" alt="Profile Picture">
+        <h2>K. Naga Sai Karthik</h2>
+        <p>III CSE - 22691A05E2</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/nagasai-karthik-kanakagiri-91a221254"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Karthik70904" target="_blank" class="github"><i class="fab fa-github"></i></a>
+          <a href="https://kns-blogs.netlify.app" target="_blank" class="portfolio"><i class="fas fa-link"></i></a>
+        </div>
+      </div>
+ 
+      <div class="profile-card">
+        <img src="images/Mutra.jpg" alt="Profile Picture">
+        <h2>M. Jahnavi</h2>
+        <p>III CSE - 22691A0583</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/jahnavi-mutra-a48009254/" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/JahnaviMutra" target="_blank" class="github"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank" class="portfolio"><i class="fas fa-link"></i></a>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="images/sudhakar.jpg" alt="Profile Picture">
+        <h2>M. Keerthana Evanjilin</h2>
+        <p>III CSE - 22691A0599</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/keerthana-evanjilin-34abb3272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/KeerthanaSudhakar" target="_blank" class="github"><i
+              class="fab fa-github"></i></a>
+          <a href="#" target="_blank" class="portfolio"><i class="fas fa-link"></i></a>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="images/Keerthi.jpg" alt="Profile Picture">
+        <h2>C. Keerthi Padma Priya</h2>
+        <p>III CSE - 22691A05A1</p>
+        <div class="links">
+          <a
+            href="https://www.linkedin.com/in/chilumpalli-keerthi-a84bab272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Keerthichilumpalli" target="_blank" class="github"><i
+              class="fab fa-github"></i></a>
+          <a href="#" target="_blank" class="portfolio"><i class="fas fa-link"></i></a>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="images/loki.jpg" alt="Profile Picture">
+        <h2>P.G. Lokeshwari</h2>
+        <p>III CSE - 22691A05B1</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/pg-lokeshwari-751114263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Loke2004" target="_blank" class="github"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank" class="portfolio"><i class="fas fa-link"></i></a>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </main>
+
+
+</body>
+
+</html>
