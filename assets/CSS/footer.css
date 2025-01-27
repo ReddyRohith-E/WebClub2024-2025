@@ -1,4 +1,5 @@
   footer {
+    margin-top: 70px;
     background-color: #1f1f3b; 
     color: #fff;
     padding: 20px 0;
@@ -9,23 +10,29 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 10%;
+   
   }
-  
+
   .footer-section {
     flex: 1 1 200px;
     margin: 10px;
+    border-bottom: 1px solid rgb(184, 165, 165);
   }
   
   .footer-logo {
-    width: 100px;
-    margin-bottom: 10px;
+    width: 110px;
+  
+    margin-top: 10px;
   }
   
   .footer-section h3, .footer-section h4 {
     margin-bottom: 10px;
-    color: #f0a028;
+    color: #d19131;
+    text-shadow: 2px 2px 2px rgb(17, 17, 17);
   }
-  
+  .footer-section h4{
+    font-size: 20px;
+  }
   .footer-section ul {
     list-style: none;
     padding: 0;
@@ -46,8 +53,18 @@
   
   .footer-bottom {
     text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #444;
-    padding-top: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
     font-size: 14px;
+  }
+  .footer-logo-caption{
+    font-size: 25px;
+  }
+  #mail{
+    color: white;
+    text-decoration: none;
+  }
+  #mail:hover{
+    text-decoration: underline;
+    color: bisque;
   }
