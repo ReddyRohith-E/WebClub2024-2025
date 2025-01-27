@@ -74,7 +74,7 @@ main {
     align-items: center;
     gap: 0.5rem;
     background: var(--org-color);
-    color: var(--bg-color);
+    color: var(--white-color);
     text-decoration: none;
     padding: 0.75rem 2rem;
     border-radius: 0.5rem;
@@ -118,54 +118,4 @@ main {
     .text h2 {
         font-size: 2rem;
     }
-}
-
-.he{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    h1{
-    font-size: 3rem;
-    }   
-    color: white;
-}
-.lis::-webkit-scrollbar{
-    display: none;
-}
-.lis{
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    width: 60%;
-    height: 65vh;
-    overflow-y: auto;
-    margin-inline: auto;
-    h3{
-        padding: 18px;
-        font-weight: 500;
-    }
-    hr{
-        border: 0.5px solid black;
-    width: 100%;
-    }
-    background-color: #eed89c; 
-    border-radius: 20px;
-}
-.b{
-    button{
-    background-color: #F0A028;
-    padding: 10px;
-     border-radius: 10px;
-     margin: 2vh;
-     color: white ;
-     width: 20%;
-     font-size: 1.3rem;
-    }
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
 }

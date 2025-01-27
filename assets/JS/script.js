@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h2>${project.title}</h2>
             </div>
             <p>${project.description}</p>
-            <button class="exp-btn">Explore</button>
+            <a href="#" class="exp-btn">Explore</a>
         `;
 		container.appendChild(card);
 	});

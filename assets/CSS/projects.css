@@ -19,11 +19,6 @@
     margin-bottom: 2rem;
 }
 
-.projects-section .heading h3 {
-    font-size: 4vh;
-    margin: 2rem;
-}
-
 /* Project Container */
 .project-container {
     color: white;
@@ -90,7 +85,11 @@
     margin: 1rem 0;
 }
 
-.project-card button {
+.project-card .exp-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     color: white;
     padding: 8px;
     border-radius: 5px;
@@ -99,7 +98,11 @@
     outline: none;
     width: 60%;
     margin-inline: auto;
-    cursor: pointer;
+    z-index: 1;
+}
+
+.project-card .exp-btn:hover {
+    background-color: #f8b44c;
 }
 
 .project-card::before {
@@ -142,7 +145,7 @@
         font-size: 1rem;
     }
 
-    .project-card button {
+    .project-card .exp-btn {
         width: 80%;
     }
 }
