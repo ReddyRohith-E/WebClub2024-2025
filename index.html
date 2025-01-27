@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/CSS/footer.css">
     <link rel="stylesheet" href="./assets/CSS/style.css">
     <link rel="stylesheet" href="./assets/CSS/projects.css">
+    <link rel="stylesheet" href="./assets/CSS/memories.css">
 </head>
 <body>
 
@@ -33,12 +34,48 @@
             </div>
         </section>
 
+        <section class="memories">
+            <div class="heading">
+                <h1>Memories</h1>
+                <h3>Capturing our Journey</h3>
+            </div>
+    
+            <!-- Carousel Section -->
+            <div class="carousel-container">
+                <div class="carousel-slide" id="carousel-slide">
+                    <!-- Images will be dynamically loaded here -->
+                </div>
+                <script id="gallery-data" type="application/json">
+                    [
+                        {
+                            "image": "assets/Images/Memories/Memory1.jpg",
+                            "alt": "Memory 1"
+                        },
+                        {
+                            "image": "assets/Images/Memories/Memory1.jpg",
+                            "alt": "Memory 1"
+                        }
+                        
+                    ]
+                </script>
+                <!-- Arrow Buttons -->
+                <button class="arrow-btn left" id="prev-btn"><i class="fas fa-angle-left"></i></button>
+                <button class="arrow-btn right" id="next-btn"><i class="fas fa-angle-right"></i></button>
+            </div>
+    
+            <!-- Dots for Navigation -->
+            <div class="dots-container" id="dots-container"></div>
+        </section>
+
         <section class="projects-section">
             <div class="heading">
                 <h1>Our Projects</h1>
                 <h3>Showcasing Innovation</h3>
             </div>
             <div class="project-container" id="project-container">
+                <!-- Project cards will be loaded here!! -->
+            </div>
+            <div>
             </div>
             <script id="project-data" type="application/json">
                 [

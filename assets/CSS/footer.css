@@ -1,69 +1,75 @@
-  footer {
-    margin-top: 70px;
-    background-color: #1f1f3b; 
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 10%;
-  }
+footer {
+  margin-top: 70px;
+  background-color: #1f1f3b; 
+  color: #fff;
+  padding: 20px 0;
+}
 
-  .footer-section {
-    flex: 1 1 200px;
-    margin: 10px;
-    border-bottom: 1px solid rgb(184, 165, 165);
-  }
-  
-  .footer-logo {
-    width: 110px;
-  
-    margin-top: 10px;
-  }
-  
-  .footer-section h3, .footer-section h4 {
-    margin-bottom: 10px;
-    color: #d19131;
-    text-shadow: 2px 2px 2px rgb(17, 17, 17);
-  }
-  .footer-section h4{
-    font-size: 20px;
-  }
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin: 5px 0;
-  }
-  
-  .footer-section ul li a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .footer-section ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 5px;
-    padding-top: 5px;
-    font-size: 14px;
-  }
-  .footer-logo-caption{
-    font-size: 25px;
-  }
-  #mail{
-    color: white;
-    text-decoration: none;
-  }
-  #mail:hover{
-    text-decoration: underline;
-    color: bisque;
-  }
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+  border-bottom: 1px solid rgb(184, 165, 165);
+}
+
+.footer-logo {
+  width: 110px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.footer-section h3, .footer-section h4 {
+  margin-bottom: 10px;
+  color: #f0a028;
+  text-shadow: 2px 2px 2px rgb(17, 17, 17);
+}
+
+.footer-section .contact-icons {
+  color: #f0a028;
+  text-shadow: 2px 2px 2px rgb(17, 17, 17);
+}
+.footer-section h4{
+  font-size: 20px;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+  color: bisque;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 5px;
+  font-size: 14px;
+}
+.footer-logo-caption{
+  font-size: 25px;
+}
+#mail{
+  color: white;
+  text-decoration: none;
+}
+#mail:hover{
+  text-decoration: underline;
+  color: bisque;
+}
