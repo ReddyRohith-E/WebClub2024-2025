@@ -1,3 +1,10 @@
+:root {
+    --bg-color: #1f1f3b;
+    --white-color: #ffffff;
+    --input: #e9e9e9;
+    --org-color: #f0a028;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -12,12 +19,6 @@ body {
     background: var(--bg-color);
 }
 
-:root {
-    --bg-color: #1f1f3b;
-    --white-color: #ffffff;
-    --input: #e9e9e9;
-    --org-color: #f0a028;
-}
 
 /* Main Content Styles */
 main {
