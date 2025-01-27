@@ -1,3 +1,10 @@
+header{
+    position: sticky;
+    top: 0;
+    left:0;
+    z-index: 1000;
+}
+
 .navbar {
     background-color: #1f1f3b; /* Dark blue background */
     color: white;
@@ -5,11 +12,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    position: fixed;
-    top: 0;
     width: 100%;
-    left:0;
-    z-index: 1000;
     box-shadow: 0 4px 6px rgba(58, 58, 58, 0.795);
     
 }
