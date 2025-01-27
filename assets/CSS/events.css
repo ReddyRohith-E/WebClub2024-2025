@@ -31,7 +31,7 @@
     height: 65vh;
     overflow-y: auto;
     margin-inline: auto;
-    background-color: #eed89c;
+    background: linear-gradient(to bottom right,#ffecec,#FFFFFF, #999999);
     border-radius: 20px;
     margin-bottom: 2rem;
 }
