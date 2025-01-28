@@ -45,6 +45,7 @@ main {
     font-weight: bold;
     background: -webkit-linear-gradient(#ffffff,#ffffff,#ffffff, #999999);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     /* color: var(--white-color); */
     margin: 0;
