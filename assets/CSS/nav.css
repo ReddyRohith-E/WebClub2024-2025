@@ -10,7 +10,9 @@ header {
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 600px;
+    /* justify-content: space-between; */
+    justify-content: space-around;
     padding: 10px 20px;
     width: 100%;
     box-shadow: 0 4px 6px rgba(58, 58, 58, 0.795);
@@ -20,7 +22,7 @@ header {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 
 .navbar .logo img {
