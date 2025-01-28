@@ -1,5 +1,5 @@
 footer {
-  margin-top: 70px;
+  margin-top: 0px;
   background-color: #1f1f3b; 
   color: #fff;
   padding: 20px 0;
@@ -20,7 +20,8 @@ footer {
 
 .footer-logo {
   width: 110px;
-  border-radius: 50%;
+  border-radius: 0%;
+  border: 2px solid white;
   margin-top: 10px;
 }
 
