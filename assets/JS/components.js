@@ -47,12 +47,11 @@ function toggleMenu() {
 }
 
 function highlightActiveLink() {
-    const currentLocation = window.location.pathname;
+    const currentLocation = window.location.href;
     const menuItems = document.querySelectorAll(".nav-links ul li a");
 
     menuItems.forEach(item => {
-        const itemPath = new URL(item.href).pathname;
-        if (itemPath === currentLocation && item.href !== "https://mitswebclub.pythonanywhere.com/" && item.getAttribute('href') !== "/#Memories") {
+        if (item.href === currentLocation) {
             item.classList.add("active");
         } else {
             item.classList.remove("active");
