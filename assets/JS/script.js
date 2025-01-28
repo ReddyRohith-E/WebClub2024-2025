@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const projectData = document.getElementById("project-data").textContent;
 	const projects = JSON.parse(projectData);
 	const container = document.getElementById("project-container");
-    console.log(container)
+    //console.log(container)
 
 	projects.forEach((project) => {
 		const card = document.createElement("div");
@@ -80,3 +80,47 @@ dots.forEach(dot => {
 
 // Handle window resize for responsiveness
 window.addEventListener('resize', updateCarousel);
+
+// Testimonials
+document.addEventListener("DOMContentLoaded", function() {
+    const dataScript = document.getElementById('testimonials-data');
+    if (!dataScript) {
+        console.error('Testimonials data script not found');
+        return;
+    }
+
+    let data;
+    try {
+        data = JSON.parse(dataScript.textContent);
+    } catch (error) {
+        console.error('Error parsing testimonials data:', error);
+        return;
+    }
+
+    if (!data.testimonials || !Array.isArray(data.testimonials)) {
+        console.error('Invalid testimonials data format');
+        return;
+    }
+
+    const container = document.getElementById('Testimonials-container');
+    if (!container) {
+        console.error('Testimonials container not found');
+        return;
+    }
+
+    data.testimonials.forEach(testimonial => {
+        //console.log('Appending testimonial:', testimonial);
+        const testimonialDiv = document.createElement('div');
+        testimonialDiv.className = 'Testimonials-sub';
+        testimonialDiv.innerHTML = `
+            <img src="assets/Images/quotes.jpg" alt="Quotes" class="quotes">
+            <h3>${testimonial.name}</h3>
+            <b>${testimonial.id}</b>
+            <p>${testimonial.quote}</p>
+        `;
+        container.appendChild(testimonialDiv);
+    });
+
+    // Debugging: Log the container's innerHTML to verify the elements are appended
+    //console.log('Testimonials container content:', container.innerHTML);
+});
