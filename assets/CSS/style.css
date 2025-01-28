@@ -25,7 +25,7 @@ body {
 main {
     max-width: 1340px;
     margin: 0 auto;
-    padding: 3.5rem 1rem;
+    padding: 2.5rem 1rem;
 }
 
 .bg-pattern{
@@ -41,7 +41,7 @@ main {
 }
 
 .hero h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: bold;
     background: -webkit-linear-gradient(#ffffff,#ffffff,#ffffff, #999999);
     -webkit-background-clip: text;
