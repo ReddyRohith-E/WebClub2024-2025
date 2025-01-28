@@ -105,16 +105,25 @@ header {
     .hamburger {
         display: block;
     }
-
+    .navbar{
+        margin: 0;
+    }
+    .logo{
+        margin: 0 !important;
+    }
+    .logo img{
+        margin: 0 !important;
+    }
     .navbar .nav-links {
         flex-direction: column; /* Arrange items vertically */
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         position: absolute;
-        top: 11vh;
-        right: 10vw;
+        top: 14vh;
+        left: 0;
+        right: 0;
         background-color: rgba(31, 31, 59, 0.9); /* Match navbar background */
-        width: 50%; /* Adjust width for dropdown */
+        width: 100%; /* Adjust width for dropdown */
         padding: 20px 0; /* Add padding for spacing */
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         transform-origin: top right;
