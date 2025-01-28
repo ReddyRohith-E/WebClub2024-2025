@@ -1,23 +1,24 @@
 // Projects Section
 document.addEventListener("DOMContentLoaded", () => {
-	const projectData = document.getElementById("project-data").textContent;
-	const projects = JSON.parse(projectData);
-	const container = document.getElementById("project-container");
-    //console.log(container)
+    const projectData = document.getElementById("project-data").textContent;
+    const projects = JSON.parse(projectData);
+    const container = document.getElementById("project-container");
 
-	projects.forEach((project) => {
-		const card = document.createElement("div");
-		card.className = "project-card";
-		card.innerHTML = `
+    projects.forEach((project) => {
+        const card = document.createElement("div");
+        card.className = "project-card";
+        const projectLink = project.link || '#';
+        const targetAttr = projectLink === '#' ? '' : 'target="_blank"';
+        card.innerHTML = `
             <div class="overlay">
                 <img src="${project.image}" alt="${project.alt}">
                 <h2>${project.title}</h2>
             </div>
             <p>${project.description}</p>
-            <a href="#" class="exp-btn">Explore</a>
+            <a href="${projectLink}" ${targetAttr} class="exp-btn">Explore</a>
         `;
-		container.appendChild(card);
-	});
+        container.appendChild(card);
+    });
 });
 
 // Memories Section
