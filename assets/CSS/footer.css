@@ -1,6 +1,6 @@
 footer {
   margin-top: 0px;
-  background-color: #1f1f3b; 
+  background-color: #35354E; 
   color: #fff;
   padding: 20px 0;
 }
@@ -15,14 +15,14 @@ footer {
 .footer-section {
   flex: 1 1 200px;
   margin: 10px;
-  border-bottom: 1px solid rgb(184, 165, 165);
+  /* border-bottom: 1px solid rgb(184, 165, 165); */
 }
 
 .footer-logo {
   width: 110px;
   border-radius: 0%;
   border: 2px solid white;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 .footer-section h3, .footer-section h4 {
@@ -38,13 +38,15 @@ footer {
 .footer-section h4{
   font-size: 20px;
 }
+
 .footer-section ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-section ul li {
+.footer-section ul li,p {
   margin: 5px 0;
+  line-height: 26px;
 }
 
 .footer-section ul li a {
