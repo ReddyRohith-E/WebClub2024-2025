@@ -142,7 +142,7 @@ border-color: #F0A028;
   text-align: justify;
 }
 
-.logo {
+/* .logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,7 +155,7 @@ border-color: #F0A028;
   height: auto;
   object-fit: contain;
   border-radius: 50%;
-}
+} */
 
 .vismis {
   margin: 7%;
