@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
-*{
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,264 +9,370 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto Serif', serif;
-  background: #1F1F3B;
+    font-family: 'Roboto Serif', serif;
+    background: #1F1F3B;
 }
 
-
-
+/* Main Styles */
 .bg-pattern-icon {
-  position: absolute;
-  bottom: 10px;
-  left: 718px;
-  width: 802px;
-  height: 791px;
-  overflow: hidden;
-  object-fit: contain;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: auto;
+    overflow: hidden;
+    object-fit: contain;
 }
+
 .hero-section-child {
-  position: absolute;
-  background: linear-gradient(180deg, #f0a028, rgba(240, 160, 40, 0));
-  height: 1000px;
-margin: auto;
-  opacity: 0.1;
+    position: absolute;
+    background: linear-gradient(180deg, #f0a028, rgba(240, 160, 40, 0));
+    height: 1000px;
+    width: 100%;
+    opacity: 0.1;
 }
+
 .about-college {
-  /* align-self: stretch; */
-  position: relative;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  height: 50px;
-  flex-shrink: 0;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    flex-shrink: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .madanapalle-institute-of {
-  /* align-self: stretch; */
-  position: relative;
-  font-size: 14px;
-  line-height: 26px;
-  color: #ffffff;
-  text-align: justify;
+    position: relative;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+    text-align: justify;
 }
+
 .about-college-parent {
-  /* align-self: stretch; */
-  display: flex;
-  flex-direction: column;
-  /* align-items: flex-start; */
-  /* justify-content: flex-start; */
-  gap: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
+
 .frame-group {
-  width: 692px;
-  display: flex;
-  flex-direction: column;
-  /* align-items: flex-start;
-  justify-content: flex-start; */
-  gap: 40px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
+
 .frame-child {
-  width: 550px;
-  position: relative;
-  height: 500px;
-  object-fit: cover;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
+
 .frame-parent {
-  position: absolute;
-  top: 15px;
-margin: 0 70px;
-  /* left: calc(50% - 801px); */
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 86px;
-padding: 40px;
+    position: relative;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
 }
+
 .hero-section {
-  /* width: 100%; */
-  position: relative;
-  height: 580px;
-  overflow: hidden;
-  text-align: left;
-  font-size: 40px;
-  color: #f0a028;
-  font-family: 'Roboto Serif';
+    position: relative;
+    height: 580px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 40px;
+    color: #f0a028;
+    font-family: 'Roboto Serif', serif;
 }
 
 main {
-  background: #1F1F3B;
-  /* padding: 40px 20px; */
-  text-align: center;
+    background: #1F1F3B;
+    text-align: center;
 }
 
-/* hr {
-width: 80%;
-margin: auto;
-border-color: #F0A028;
-} */
-
-
 .heading {
-  margin-top: 60px;
+    margin-top: 60px;
 }
 
 .heading h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #F0A028;
-  margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #F0A028;
+    margin-bottom: 10px;
 }
 
 .hero-sec {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 85px;
-  margin: 10%;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 85px;
+    margin: 10%;
+    flex-wrap: wrap;
 }
 
 .hero-section-child h2 {
-  font-family: Roboto Serif;
-  color: #F0A028;
-  margin-bottom: 10px;
+    font-family: 'Roboto Serif', serif;
+    color: #F0A028;
+    margin-bottom: 10px;
 }
 
 .hero-section-child p {
-  font-family: Roboto Serif;
-  color: #fff;
-  text-align: justify;
+    font-family: 'Roboto Serif', serif;
+    color: #fff;
+    text-align: justify;
 }
-
-/* .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  max-width: 200px;
-}
-
-.logo img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 50%;
-} */
 
 .vismis {
-  margin: 7%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #5D5D71;
-  justify-content: space-evenly;
-  padding: 1%;
-  min-height: 65vh;
-  border-radius: 32px;
+    margin: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5D5D71;
+    justify-content: space-evenly;
+    padding: 1%;
+    min-height: 65vh;
+    border-radius: 32px;
 }
 
 .vismis h2 {
-  font-family: Roboto Serif;
-  margin-bottom: 20px;
-  color: #F0A028;
+    font-family: 'Roboto Serif', serif;
+    margin-bottom: 20px;
+    color: #F0A028;
 }
 
 .vismis p {
-  margin: 0 5%;
-  font-family: Roboto Serif;
-  color: #fff;
-  text-align: justify;
+    margin: 0 5%;
+    font-family: 'Roboto Serif', serif;
+    color: #fff;
+    text-align: justify;
 }
 
 .coord {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10rem;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin: 40px 0 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0 60px 0;
 }
 
 .profile-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  min-width: 230px;
-  text-align: center;
-  padding: 20px 0 10px 0;
-  z-index: 1;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 230px;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    z-index: 1;
 }
 
 .profile-card img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  margin-bottom: 5px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 5px;
 }
 
 .profile-card h2 {
-  font-size: 18px;
-  margin: 10px 0;
+    font-size: 18px;
+    margin: 10px 0;
 }
 
 .profile-card p {
-  font-size: 14px;
-  color: #333;
-  margin: 5px 0 15px;
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0 15px;
 }
 
 .profile-card .links {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .profile-card .links a {
-  text-decoration: none;
-  color: #003366;
-  background-color: #F0A028;
-  border-radius: 50%;
-  padding: 10px;
-  font-size: 20px;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s;
+    text-decoration: none;
+    color: #003366;
+    background-color: #F0A028;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
 }
 
 .profile-card .links a:hover {
-  background-color: #F0A028;
-  opacity: 0.9;
+    background-color: #F0A028;
+    opacity: 0.9;
 }
 
+/* Responsive Design */
+
+/* Mobile Portrait */
 @media (max-width: 600px) {
-  .aboutsec {
-    flex-direction: column;
-    gap: 20px;
-    margin: 5%;
-  }
+    .aboutsec {
+        flex-direction: column;
+        gap: 20px;
+        margin: 5%;
+    }
 
-  .coord {
-    flex-direction: column;
-    gap: 20px;
-  }
+    .coord {
+        flex-direction: column;
+        gap: 20px;
+    }
 
-  .profile-card {
-    min-width: 180px;
-  }
+    .profile-card {
+        min-width: 180px;
+    }
+
+    .hero-sec {
+        gap: 40px;
+        margin: 5%;
+    }
+
+    .frame-parent {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .vismis {
+        margin: 5%;
+        padding: 2%;
+    }
+
+    .vismis h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 800px) and (orientation: landscape) {
+    .aboutsec {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 2%;
+    }
+
+    .coord {
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    .profile-card {
+        min-width: 150px;
+    }
+
+    .hero-sec {
+        gap: 20px;
+        margin: 5%;
+    }
+
+    .frame-parent {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+    }
+
+    .vismis {
+        margin: 3%;
+        padding: 1%;
+    }
+
+    .vismis h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+
+/* Tablet Portrait */
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
+    .frame-parent {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .hero-sec {
+        gap: 60px;
+        margin: 7%;
+    }
+
+    .coord {
+        gap: 8rem;
+    }
+
+    .vismis h2 {
+        font-size: 2rem;
+    }
+
+    .hero-section {
+        font-size: 3rem;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 601px) and (max-width: 1024px) and (orientation: landscape) {
+    .frame-parent {
+        flex-direction: row;
+        align-items: center;
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .hero-sec {
+        gap: 80px;
+        margin: 5%;
+    }
+
+    .coord {
+        gap: 10rem;
+    }
+
+    .vismis h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section {
+        font-size: 3.5rem;
+    }
 }

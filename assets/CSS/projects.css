@@ -138,12 +138,27 @@
 }
 
 @media (max-width: 480px) {
+    .projects-section {
+        padding: 1rem 0;
+        padding-top: 3rem;
+    }
+
     .projects-section .heading h1 {
         font-size: 6vh;
     }
 
     .projects-section .heading h3 {
         font-size: 2.5vh;
+    }
+
+    .project-container {
+        padding: 1rem 2rem;
+        gap: 20px;
+    }
+
+    .project-card {
+        padding: 1rem;
+        gap: 0.5rem;
     }
 
     .project-card h2 {

@@ -1,10 +1,8 @@
 .events-section {
-    /* background-color: #1b1b3a; */
     color: #ffffff;
     padding: 2rem;
     padding-top: 6rem;
     text-align: center;
-    /* width: 1400px; */
 }
 
 .events-section .heading h1 {
@@ -33,7 +31,7 @@
     height: 65vh;
     overflow-y: auto;
     margin-inline: auto;
-    background: linear-gradient(to bottom right,#ffffff,#fce3cb, #F0A028);
+    background: linear-gradient(to bottom right, #ffffff, #fce3cb, #F0A028);
     border-radius: 20px;
     margin-bottom: 2rem;
 }

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
+/* Variables */
 :root {
     --bg-color: #1f1f3b;
     --white-color: #ffffff;
@@ -7,7 +8,8 @@
     --org-color: #f0a028;
 }
 
-*{
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,28 +17,28 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Roboto Serif', serif;
     background: var(--bg-color);
 }
-
 
 /* Main Content Styles */
 main {
     max-width: 1340px;
     margin: 0 auto;
     padding: 2.5rem 1rem;
+    position: relative;
 }
 
-.bg-pattern{
+/* Background Pattern */
+.bg-pattern {
     position: absolute;
     top: 10vh;
     right: 0;
     height: 50vw;
+    z-index: -1;
 }
 
+/* Hero Section */
 .hero {
     text-align: center;
     margin-bottom: 4rem;
@@ -45,21 +47,20 @@ main {
 .hero h1 {
     font-size: 6rem;
     font-weight: bold;
-    background: -webkit-linear-gradient(#ffffff,#ffffff,#ffffff, #999999);
+    background: -webkit-linear-gradient(#ffffff, #ffffff, #ffffff, #999999);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* color: var(--white-color); */
     margin: 0;
     letter-spacing: 0.05em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Content Section */
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3.5rem;
-    /* align-items: center; */
     align-items: start;
 }
 
@@ -95,6 +96,7 @@ main {
     background-color: #f8b44c;
 }
 
+/* Image Section */
 .image {
     position: relative;
 }
@@ -107,14 +109,16 @@ main {
 }
 
 .image img {
-    /* width: 100%; */
     width: 630px;
     height: 360px;
     border-radius: 1rem;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 /* Responsive Design */
+
+/* Mobile Portrait */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 3rem;
@@ -127,5 +131,92 @@ main {
 
     .text h2 {
         font-size: 2rem;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .join-btn {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .text h2 {
+        font-size: 1.75rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+
+    .join-btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .text h2 {
+        font-size: 2.2rem;
+    }
+
+    .text p {
+        font-size: 1.125rem;
+    }
+
+    .join-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 576px) and (orientation: landscape) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .text h2 {
+        font-size: 2rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+
+    .join-btn {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    .text h2 {
+        font-size: 2.5rem;
+    }
+
+    .text p {
+        font-size: 1.125rem;
+    }
+
+    .join-btn {
+        padding: 0.75rem 2rem;
+        font-size: 1.125rem;
     }
 }

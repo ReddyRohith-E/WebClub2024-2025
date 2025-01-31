@@ -119,6 +119,11 @@
 }
 
 @media (max-width: 480px) {
+    .memories {
+        padding: 1rem;
+        padding-top: 4rem;
+    }
+
     .memories .heading h1 {
         font-size: 1.8rem;
     }
@@ -135,6 +140,89 @@
     .dot {
         height: 8px;
         width: 8px;
+    }
+
+    .carousel-slide img {
+        max-height: 200px;
+    }
+}
+
+/* Additional Media Queries for Mobile Devices */
+@media (max-width: 360px) {
+    .memories .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .memories .heading h3 {
+        font-size: 0.8rem;
+    }
+
+    .arrow-btn {
+        font-size: 0.8rem;
+        padding: 0.2rem;
+    }
+
+    .dot {
+        height: 6px;
+        width: 6px;
+    }
+
+    .carousel-slide img {
+        max-height: 150px;
+    }
+}
+
+/* Media Queries for screen rotation */
+@media (max-width: 768px) and (orientation: landscape) {
+    .memories .heading h1 {
+        font-size: 2.2rem;
+    }
+
+    .memories .heading h3 {
+        font-size: 1.1rem;
+    }
+
+    .arrow-btn {
+        font-size: 1.3rem;
+        padding: 0.45rem;
+    }
+
+    .carousel-slide img {
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 480px) and (orientation: landscape) {
+    .memories .heading h1 {
+        font-size: 2rem;
+    }
+
+    .memories .heading h3 {
+        font-size: 1rem;
+    }
+
+    .arrow-btn {
+        font-size: 1.1rem;
+        padding: 0.35rem;
+    }
+
+    .carousel-slide img {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 360px) and (orientation: landscape) {
+    .memories .heading h1 {
+        font-size: 1.8rem;
+    }
+
+    .memories .heading h3 {
+        font-size: 0.9rem;
+    }
+
+    .arrow-btn {
+        font-size: 0.9rem;
+        padding: 0.25rem;
     }
 
     .carousel-slide img {
